@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">MembershipSystem</string>
+    <string name="title">Membership System</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="sign_in">SIGN IN</string>
+
+    <string name="enter_info">Please enter your information:</string>
+    <string name="register">Register</string>
+    <string name="go_back">Go Back</string>
+    <string name="select_admin">Select Admin username and</string>
+    <string name="select_admin1">enter password:</string>
+    <string name="make_admin">Make Admin</string>
+
+
+
+    <string name="admin">ADMINISTRATOR</string>
+    <string name="user">USER</string>
+
+
+    <string name="username_">Username :</string>
+    <string name="name_">Name :</string>
+    <string name="dob_">DOB :</string>
+    <string name="phone_num_">Phone# :</string>
+    <string name="email_">E-mail Address :</string>
+    <string name="address_">Address :</string>
+
+    <string name="name">Name</string>
+    <string name="dob">DOB</string>
+    <string name="phone_num">Phone#</string>
+    <string name="email">E-mail Address</string>
+    <string name="address">Address"\n"Line 2</string>
+
+
+    <string name="dob_o">DOB (optional)</string>
+    <string name="phone_num_o">Phone# (optional)</string>
+    <string name="email_o">E-mail Address (optional)</string>
+    <string name="address_o">Address (optional)</string>
+
+
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.membershipsystem.fragments.SearchFragment">
+
+    <LinearLayout
+        android:id="@+id/option_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/changeSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:text="S"
+
+            android:background="@color/Pink"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/namesAutoComplete"
+                android:hint="Enter Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10" />
+
+            <AutoCompleteTextView
+                android:id="@+id/usernamesAutoComplete"
+                android:hint="Enter Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_below="@+id/option_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Search"/>
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/search_button"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/LinearL">
+
+            <TextView
+                style="@style/TextV"
+                android:text="@string/username_"/>
+            <TextView
+                android:id="@+id/searchUsername"
+                style="@style/EditV"
+                android:text="myUsername"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/LinearL">
+
+            <TextView
+                style="@style/TextV"
+                android:text="@string/name_"/>
+            <TextView
+                android:id="@+id/searchName"
+                style="@style/EditV"
+                android:text="myName"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/LinearL">
+
+            <TextView
+                style="@style/TextV"
+                android:text="@string/dob_"/>
+            <TextView
+                android:id="@+id/searchDob"
+                style="@style/EditV"
+                android:text="myDOB"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/LinearL">
+
+            <TextView
+                style="@style/TextV"
+                android:text="@string/phone_num_"/>
+            <TextView
+                android:id="@+id/searchNum"
+                style="@style/EditV"
+                android:text="my#"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/LinearL">
+
+            <TextView
+                style="@style/TextV"
+                android:text="@string/email_"/>
+            <TextView
+                android:id="@+id/searchEmail"
+                style="@style/EditV"
+                android:text="myEmail"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/LinearL">
+
+            <TextView
+                style="@style/TextV"
+                android:text="@string/address_"/>
+            <TextView
+                android:id="@+id/searchAddress"
+                style="@style/EditV"
+                android:text="myaddress\nanother"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            />
+        <LinearLayout
+            android:id="@+id/admin_buttons"
+            style="@style/LinearL"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="Edit"/>
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="Delete"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Indigo">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="29dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/AliceBlue"
+        android:textSize="30sp" />
+
+    <EditText
+        style="@style/LoginEditT"
+        android:id="@+id/editTextUsername"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        style="@style/LoginEditT"
+        android:id="@+id/editTextPassword"
+        android:layout_alignLeft="@+id/editTextUsername"
+        android:layout_alignRight="@+id/editTextUsername"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/buttonNextPage"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editTextPassword"
+        android:layout_alignRight="@+id/editTextPassword"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/buttoninputborder"
+        android:text="@string/sign_in"
+        android:textColor="@color/White"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button_new"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/buttonNextPage"
+        android:layout_alignRight="@id/buttonNextPage"
+        android:layout_below="@id/buttonNextPage"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/buttoninputborder"
+        android:text="NEW USER?"
+        android:textColor="@color/White"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

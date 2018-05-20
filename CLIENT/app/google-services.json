@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "43472884383",
+    "firebase_url": "https://mefirebase-ec82e.firebaseio.com",
+    "project_id": "mefirebase-ec82e",
+    "storage_bucket": "mefirebase-ec82e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43472884383:android:c5d7b5a37cb17057",
+        "android_client_info": {
+          "package_name": "com.membershipsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43472884383-c2v9q65qmm6av0bdrctfic0sktb9iljs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmerrZEuBj_IW6NlrUOqCHkuurImjgP0E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

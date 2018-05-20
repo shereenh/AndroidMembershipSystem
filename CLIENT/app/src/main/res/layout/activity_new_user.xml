@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Indigo"
+    tools:context="com.membershipsystem.NewUserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/makeUser"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="User"/>
+            <Button
+                android:id="@+id/makeAdmin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Adminstrator"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/NUTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:text="@string/enter_info"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/AliceBlue"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/setUsername"
+            style="@style/LoginEditT"
+            android:layout_below="@+id/NUTextView1"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/username" />
+
+        <EditText
+            android:id="@+id/setName"
+            style="@style/LoginEditT"
+            android:layout_below="@+id/setUsername"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="@string/name" />
+
+        <EditText
+            android:id="@+id/setPassword"
+            style="@style/LoginEditT"
+            android:layout_alignLeft="@+id/setName"
+            android:layout_alignRight="@+id/setName"
+            android:layout_below="@+id/setName"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/setConfirmPassword"
+            style="@style/LoginEditT"
+            android:layout_alignLeft="@+id/setPassword"
+            android:layout_alignRight="@+id/setPassword"
+            android:layout_below="@+id/setPassword"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/setDob"
+            style="@style/LoginEditT"
+            android:layout_below="@+id/setConfirmPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="@string/dob_o" />
+
+        <EditText
+            android:id="@+id/setPhone"
+            style="@style/LoginEditT"
+            android:layout_below="@+id/setDob"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="@string/phone_num_o" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/wrong"-->
+            <!--android:layout_alignRight="@id/setPhone"-->
+            <!--android:layout_alignBottom="@+id/setDob"-->
+            <!--android:layout_marginTop="26dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="*"/>-->
+
+        <EditText
+            android:id="@+id/setEmail"
+            style="@style/LoginEditT"
+            android:layout_below="@+id/setPhone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="@string/email_o" />
+
+        <EditText
+            android:id="@+id/setAddress"
+            style="@style/LoginEditT"
+            android:layout_below="@+id/setEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="@string/address_o" />
+
+        <LinearLayout
+            android:id="@+id/setAddress1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/setAddress"
+            android:layout_marginTop="15dp">
+
+            <Button
+            android:id="@+id/buttonReg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="37dp"
+                android:layout_marginRight="20dp"
+            android:background="@drawable/buttoninputborder"
+            android:text="@string/register"
+            android:textColor="@color/White"
+            android:textSize="15sp" />
+
+            <Button
+            android:id="@+id/buttonGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/buttoninputborder"
+            android:text="@string/go_back"
+            android:textColor="@color/White"
+            android:textSize="15sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

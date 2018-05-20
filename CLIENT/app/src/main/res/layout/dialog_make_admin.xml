@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/select_admin"
+        android:layout_marginRight="7dp"
+        />
+    <TextView
+        style="@style/TextV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/select_admin1"
+        />
+    <ListView
+        android:id="@+id/adminList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+    <EditText
+        style="@style/LoginEditT"
+        android:id="@+id/editAdminPassword"
+        android:layout_marginTop="26dp"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+    <Button
+        style="@style/LoginButton"
+        android:id="@+id/makeAdminButton"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/make_admin"/>
+
+</LinearLayout>
